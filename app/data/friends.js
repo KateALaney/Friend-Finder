@@ -1,3 +1,7 @@
+$("#submit").on("click", function(event) {
+  event.preventDefault();
+
+
 var friendArray = [
     {
       friendName: "Kate Laney",
