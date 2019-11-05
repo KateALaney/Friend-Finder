@@ -1,8 +1,8 @@
-var friendData = require("../data/friends");
+var friends = require("../data/friends");
 
 module.exports = function (app) {
   app.get("/api/friends", function (req, res) {
-    res.json(friendData);
+    res.json(friends);
   });
 
   app.post("/api/friends", function (req, res) {
@@ -14,21 +14,21 @@ module.exports = function (app) {
     var closestFriendIndex = 0;
     var minimumDifference = 50;
 
-    for (var i = 0; i < friendData.length; i++) {
+    for (var i = 0; i < friends.length; i++) {
       var totalDifference = 0;
-      for (var j = 0; j < friendData[i].scores.length; j++) {
-        var difference = Math.abs(user.scores[j] - friendData[i].scores[j]);
+      for (var j = 0; j < friends[i].scores.length; j++) {
+        var difference = Math.abs(user.scores[j] - friends[i].scores[j]);
         totalDifference += difference;
       }
 
       if (totalDifference < minimumDifference) {
-        bestFriendIndex = i;
+        closestFriendIndex = i;
         minimumDifference = totalDifference;
       }
     }
 
-    friendData.push(user);
+    friends.push(user);
 
-    res.json(friendData[closestFriendIndex]);
+    res.json(friends[closestFriendIndex]);
   });
 };

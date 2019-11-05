@@ -11,12 +11,30 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         .jumbotron {
-            background-image: url(background.jpg);
+            background-image: url(https://cdn.smartrecruiters.com/blog/wp-content/uploads/2015/11/People-city.jpg);
+            background-color: #FFCC33;
             text-align: center;
+            border: 2px solid black;
         }
 
         .top-buffer {
             margin-top: 50px;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        .form-group {
+            font-weight: bold;
+        }
+
+        #name {
+            font-weight: bold;
+        }
+
+        #picture {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -26,7 +44,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="jumbotron">
-                    <h1 class="display-4"><strong><i class="fa fa-users" aria-hidden="true"></i> Friend Finder
+                    <h1 class="display-4"><strong><i class="fa fa-list-alt" aria-hidden="true"></i> Friend Finder
                             Survey</strong></h1>
                     <h4>Please answer the following questions to be matched!</h4>
                 </div>
@@ -48,187 +66,177 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p>Question 1: I am the life of the party.</p>
-                <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle btn-group-vertical" type="button" id="question1input"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select A Score
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                <div class="form-group">
+                    <label for="question1">Question 1: I am the life of the party.</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question1">
+                            <option value="empty">Select An Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row top-buffer">
+        <div class="row">
             <div class="col-md-12">
-                <p>Question 2: I like others.</p>
-                <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle btn-group-vertical" type="button" id="question1input"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select A Score
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                <div class="form-group">
+                    <label for="question2">Question 2: I like others.</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question2">
+                            <option value="empty">Select An Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row top-buffer">
+        <div class="row">
             <div class="col-md-12">
-                <p>Question 3: I have difficulty understanding abstract ideas.</p>
-                <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle btn-group-vertical" type="button" id="question1input"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select A Score
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                <div class="form-group">
+                    <label for="question3">Question 3: I have difficulty understanding abstract ideas.</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question3">
+                            <option value="empty">Select An Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row top-buffer">
+        <div class="row">
             <div class="col-md-12">
-                <p>Question 4: I sympathize with others.</p>
-                <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle btn-group-vertical" type="button" id="question1input"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select A Score
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                <div class="form-group">
+                    <label for="question4">Question 4: I sympathize with others.</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question4">
+                            <option value="empty">Select An Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row top-buffer">
+        <div class="row">
             <div class="col-md-12">
-                <p>Question 5: I get upset easily.</p>
-                <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle btn-group-vertical" type="button" id="question1input"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select A Score
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                <div class="form-group">
+                    <label for="question5">Question 5: I get upset easily.</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question5">
+                            <option value="empty">Select An Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row top-buffer">
+        <div class="row">
             <div class="col-md-12">
-                <p>Question 6: I don't talk a lot.</p>
-                <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle btn-group-vertical" type="button" id="question1input"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select A Score
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                <div class="form-group">
+                    <label for="question6">Question 6: I don't talk a lot.</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question6">
+                            <option value="empty">Select An Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row top-buffer">
+        <div class="row">
             <div class="col-md-12">
-                <p>Question 7: I make a mess of things.</p>
-                <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle btn-group-vertical" type="button" id="question1input"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select A Score
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                <div class="form-group">
+                    <label for="question7">Question 7: I make a mess of things.</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question7">
+                            <option value="empty">Select An Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row top-buffer">
+        <div class="row">
             <div class="col-md-12">
-                <p>Question 8: I am not interested in other people's problems.</p>
-                <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle btn-group-vertical" type="button" id="question1input"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select A Score
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                <div class="form-group">
+                    <label for="question8">Question 8: I am not interested in other people's problems.</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question8">
+                            <option value="empty">Select An Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row top-buffer">
+        <div class="row">
             <div class="col-md-12">
-                <p>Question 9: I do not have a good imagination.</p>
-                <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle btn-group-vertical" type="button" id="question1input"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select A Score
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                <div class="form-group">
+                    <label for="question9">Question 9: I do not have a good imagination.</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question9">
+                            <option value="empty">Select An Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row top-buffer">
+        <div class="row">
             <div class="col-md-12">
-                <p>Question 10: I feel other people's emotions.</p>
-                <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle btn-group-vertical" type="button" id="question1input"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select A Score
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                        <a class="dropdown-item" href="#">2</a>
-                        <a class="dropdown-item" href="#">3</a>
-                        <a class="dropdown-item" href="#">4</a>
-                        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+                <div class="form-group">
+                    <label for="question10">Question 10: I feel other people's emotions.</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="question10">
+                            <option value="empty">Select An Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row top-buffer">
+        <div class="row">
             <div class="col-md-12">
-                <input class="btn btn-dark" type="submit" value="Submit">
+                <input class="btn btn-dark" type="submit" id="submitBtn" value="Submit">
             </div>
         </div>
         <div class="row top-buffer">
@@ -237,10 +245,69 @@
                     Repo</a>
             </div>
         </div>
+        <div id="newFriendModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Your New Friend!</h1>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="newFriend"></h2>
+                        <img id="newFriendPhoto" src="#">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <script type="javascript">
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $("#submitBtn").on("click", function (event) {
+            event.preventDefault();
+            var valid = true;
+            if ($("#name").val() === "" || $("#picture").val() === "") {
+                valid = false;
+            } else if ($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3")
+                .val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" ||
+                $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8")
+                .val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+                valid = false;
+            }
+            if (valid === true) {
+                var newUser = {
+                    name: $("#name").val().trim(),
+                    picture: $("#picture").val().trim(),
+                    scores: [
+                        $("#question1").val(),
+                        $("#question2").val(),
+                        $("#question3").val(),
+                        $("#question4").val(),
+                        $("#question5").val(),
+                        $("#question6").val(),
+                        $("#question7").val(),
+                        $("#question8").val(),
+                        $("#question9").val(),
+                        $("#question10").val()
+                    ]
+                };
+                var currentURL = window.location.origin;
+                // Ajax call for receiving response after POST req
+                $.post(currentURL + "/api/friends", newUser, function (data) {
+                    $("#newFriend").text(data.name);
+                    $("#newFriendPhoto").attr("src", data.photo);
+                    $("#newFriendModal").modal("toggle");
+                });
+            } else {
+                // If a required field is missing, show alert
+                alert("Survey is incomplete!");
+            }
+        });
     </script>
 
 </body>
